@@ -4,12 +4,19 @@ project(fastdds_hello_world_example VERSION 1 LANGUAGES CXX)
 
 find_package(Threads REQUIRED)
 
+# User provides this path
+set(FAST_DDS_INSTALL_DIR "" CACHE PATH "Fast DDS install directory")
+
+if(NOT FAST_DDS_INSTALL_DIR)
+    message(FATAL_ERROR "Please set FAST_DDS_INSTALL_DIR")
+endif()
+
 include_directories(
-  ${CMAKE_CURRENT_SOURCE_DIR}/../install/include
+    ${FAST_DDS_INSTALL_DIR}/include
 )
 
 link_directories(
-  ${CMAKE_CURRENT_SOURCE_DIR}/../install/lib
+    ${FAST_DDS_INSTALL_DIR}/lib
 )
 
 file(GLOB HELLO_WORLD_SOURCES_CXX "*.cxx")
