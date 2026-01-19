@@ -13,12 +13,15 @@ Fast DDS comprises:
 <img width="610" height="207" alt="image" src="https://github.com/user-attachments/assets/e6e21a07-a67a-493e-a437-1a10fc46a368" />
 
 ## Terms for DDS
-- Topic : an identifer that publisher and subscriber should agree on it (imagine it as switch that connect all applications that attached to it)
+- Topic : an identifer that publisher and subscriber should agree on it (imagine it as switch that connect all applications that attached to it) (unique per domain)
 - Publisher: data sender
 - Subscriber: data receiver
 - Domain: similar to a meeting room contains communication partners
 - DomainParticipant: (communication entity or communication partner) application that can be publisher or subscriber or both
-note: Only entities belonging to the same domain can discover each other through matching topics, and consequently exchange data between publishers and subscribers
+
+## notes
+- Only entities belonging to the same domain can discover each other through matching topics, and consequently exchange data between publishers and subscribers
+- The information flow is regulated by Quality of Service (QoS) policies established between the entities in charge of the data exchange.
 
 # Dependencies
 ``` bash
