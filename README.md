@@ -42,6 +42,8 @@ sudo apt install libssl-dev
 ``` bash
 # step 1 : download any version from https://eprosima.com/index.php/downloads-all
 # step 2 : decompressed the downloaded tar file using tar -xf <FILE_NAME>
-# step 3 : run
-sudo ./install
+# step 3 : know what options the script provides
+./install --help
+# step 4 : run with your wanted options
+sudo ./install --install-prefix <INSTALLATION_PATH> --build-cores <NO_OF_CORES>
 ```
