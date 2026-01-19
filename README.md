@@ -13,7 +13,7 @@ Fast DDS comprises:
 <img width="610" height="207" alt="image" src="https://github.com/user-attachments/assets/e6e21a07-a67a-493e-a437-1a10fc46a368" />
 
 ## Terms for DDS
-- Topic : identifer that publisher and subscriber should agree on it (imagine it as switch that connect all application that attached to it)
+- Topic : an identifer that publisher and subscriber should agree on it (imagine it as switch that connect all application that attached to it)
 - Publisher: data sender
 - Subscriber: data receiver
 - Domain: similar to a meeting room contains communication partners
