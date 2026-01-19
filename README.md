@@ -53,7 +53,7 @@ sudo ./install --install-prefix <INSTALLATION_PATH> --build-cores <NO_OF_CORES>
 cd helloWorldExample
 rm -rf build
 mkdir build
-cmake ..
+cmake .. -DFAST_DDS_INSTALL_DIR=<INSTALLATION_PATH>
 make
 ./hello_world publisher
 ./hello_world subscriber
