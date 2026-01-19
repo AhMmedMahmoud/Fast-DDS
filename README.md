@@ -30,42 +30,18 @@ sudo apt install libasio-dev libtinyxml2-dev
 sudo apt install libssl-dev
 ```
 
-# installing eProsima Fast DDS:
+# Fast DDS Libraries / Generator:
 - foonathan_memory_vendor, an STL compatible C++ memory allocator library.
 - fastcdr, a C++ library that serializes according to the standard CDR serialization mechanism.
 - fastdds, the core library of eProsima Fast DDS library.
 - fastdds_gen, a Java application that generates source code using the data types defined in an IDL file.
 
+# Most Quick and Easy Installation Way
+- fast dds provides prebuilt versions. each version is a tar file that contains a script that builds and install fast dds libraries & generator
+
 ``` bash
-# Foonathan memory
-cd ~/Fast-DDS-python
-git clone https://github.com/eProsima/foonathan_memory_vendor.git
-mkdir foonathan_memory_vendor/build
-cd foonathan_memory_vendor/build
-cmake .. -DCMAKE_INSTALL_PREFIX=~/Fast-DDS-python/install -DBUILD_SHARED_LIBS=ON
-cmake --build . --target install
-
-# Fast CDR
-cd ~/Fast-DDS-python
-git clone https://github.com/eProsima/Fast-CDR.git
-mkdir Fast-CDR/build
-cd Fast-CDR/build
-cmake .. -DCMAKE_INSTALL_PREFIX=~/Fast-DDS-python/install
-cmake --build . --target install
-
-# Fast DDS
-cd ~/Fast-DDS-python
-git clone https://github.com/eProsima/Fast-DDS.git
-mkdir Fast-DDS/build
-cd Fast-DDS/build
-cmake .. -DCMAKE_INSTALL_PREFIX=~/Fast-DDS-python/install
-cmake --build . --target install
-
-# Fast DDS Python bindings
-cd ~/Fast-DDS-python
-git clone https://github.com/eProsima/Fast-DDS-python.git
-mkdir -p Fast-DDS-python/fastdds_python/build
-cd Fast-DDS-python/fastdds_python/build
-cmake ..  -DCMAKE_INSTALL_PREFIX=~/Fast-DDS-python/install
-cmake --build . --target install
+# step 1 : download any version from https://eprosima.com/index.php/downloads-all
+# step 2 : decompressed the downloaded tar file using tar -xf <FILE_NAME>
+# step 3 : run
+sudo ./install
 ```
