@@ -48,6 +48,12 @@ sudo apt install libssl-dev
 sudo ./install --install-prefix <INSTALLATION_PATH> --build-cores <NO_OF_CORES>
 ```
 
+# Fast DDS Generator from idl file 
+``` bash
+chmod +x generator/scripts/fastddsgen
+generator/scripts/fastddsgen -example CMake <IDL_FILE>
+```
+
 # Example Building
 ``` bash
 cd helloWorldExample
