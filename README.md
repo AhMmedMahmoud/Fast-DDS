@@ -48,12 +48,6 @@ sudo apt install libssl-dev
 sudo ./install --install-prefix <INSTALLATION_PATH> --build-cores <NO_OF_CORES>
 ```
 
-# Fast DDS Generator from idl file 
-``` bash
-chmod +x generator/scripts/fastddsgen
-generator/scripts/fastddsgen -example CMake <IDL_FILE> -d <Output_Directory_For_Generated_Files>
-```
-
 # Example Building
 ``` bash
 cd helloWorldExample
@@ -63,4 +57,10 @@ cmake ..
 make
 ./hello_world publisher
 ./hello_world subscriber
+```
+
+# Fast DDS Generator from idl file 
+``` bash
+chmod +x generator/scripts/fastddsgen
+generator/scripts/fastddsgen -example CMake <IDL_FILE> -d <Output_Directory_For_Generated_Files>
 ```
