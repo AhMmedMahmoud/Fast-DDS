@@ -47,3 +47,14 @@ sudo apt install libssl-dev
 # step 4 : run with your wanted options
 sudo ./install --install-prefix <INSTALLATION_PATH> --build-cores <NO_OF_CORES>
 ```
+
+# Example Building
+``` bash
+cd helloWorldExample
+rm -rf build
+mkdir build
+cmake ..
+make
+./hello_world publisher
+./hello_world subscriber
+```
