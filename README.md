@@ -12,6 +12,9 @@ Fast DDS comprises:
 # Conceptual diagram
 <img width="610" height="207" alt="image" src="https://github.com/user-attachments/assets/e6e21a07-a67a-493e-a437-1a10fc46a368" />
 
+# Analogy diagram
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5b0c1359-537a-421e-a00d-a492447c0c0b" />
+
 ## Terms for DDS
 - Topic : an identifer that publisher and subscriber should agree on it (imagine it as switch that connect all applications that attached to it) (unique per domain)
 - Publisher: data sender
